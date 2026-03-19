@@ -2,35 +2,59 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <a href="DEIN_INSTAGRAM_LINK" target="_blank">
-        <img src="Instagram_Glyph_Black.png" alt="Folge mir auf Instagram" style="width:100px; height:100px;">
-        
-        </a>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Bücher | Autor Name</title>
+    <title>Meine Bücher | ADHS Helden</title>
     <style>
+        /* Container für die relative Positionierung des Logos */
+        html, body {
+            position: relative;
+            min-height: 100%;
+        }
+
+        /* Das Logo oben links - scrollt mit */
+        .insta-corner-link {
+            position: absolute; /* Ändert das Verhalten von feststehend zu mitscrollend */
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+
+        .insta-corner-link:hover {
+            transform: scale(1.1);
+        }
+
+        .insta-icon-img {
+            width: 40px; /* Dezentere Größe für die Ecke */
+            height: 40px;
+        }
+
+        /* Restliches Design */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #D8BFD8;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
+            padding: 60px 20px; /* Padding oben etwas erhöht für Platz zum Logo */
             margin: 0;
         }
 
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         h1 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: #333;
             margin-bottom: 30px;
+            text-align: center;
         }
 
         .link-container {
@@ -56,7 +80,7 @@
         .link-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-            background-color: #000080; /* Amazon Orange beim Hover */
+            background-color: #000080; 
             color: white;
             border-color: #000080;
         }
@@ -71,36 +95,25 @@
 </head>
 <body>
 
-    <!-- Optional: Dein Profilbild -->
+    <!-- Instagram Logo oben links (scrollt mit) -->
+    <a href="https://www.instagram.com" class="insta-corner-link" target="_blank">
+        <img src="Instagram_Glyph_Black.png" alt="Instagram" class="insta-icon-img">
+    </a>
+
     <img src="adhs_helden_social_media.png" alt="Autor Profilbild" class="profile-img">
 
-    <h1>Hier gehts zu meinen Büchern</h1>
+    <h1>Hier geht's zu meinen Büchern</h1>
 
     <div class="link-container">
-        <!-- Buch 1 -->
-        <a href="https://www.amazon.de/ADHS-Heldenbuch-Spielerisch-Alltag-%C3%9Cbungen/dp/B0GN2VPHZF?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3JWKAKR8XB7XF&language=de_DE" class="link-card" target="_blank">
-            ADHS Heldenbuch Taschenbuch (deutsch)
+        <a href="https://www.amazon.de" class="link-card" target="_blank">
+            ADHS Heldenbuch Taschenbuch
             <span class="amazon-tag">Jetzt bei Amazon entdecken</span>
         </a>
 
-        <!-- Buch 2 -->
-        <a href="https://www.amazon.de/ADHS-Heldenbuch-Spielerisch-Alltag-%C3%9Cbungen-ebook/dp/B0GRHXBK5D/ref=tmm_kin_swatch_0" class="link-card" target="_blank">
-            ADHS Heldenbuch E-Book (deutsch) 
-            <span class="amazon-tag">Jetzt bei Amazon entdecken </span>
+        <a href="https://www.amazon.de" class="link-card" target="_blank">
+            ADHS Heldenbuch E-Book
+            <span class="amazon-tag">Jetzt bei Amazon entdecken</span>
         </a>
-
-        <!-- Zu Insta -->
-        <a href="https://www.instagram.com/adhs_helden/" target="_blank"  alt="Folge mir auf Instagram" > ...zum ADHS_Helden Channel auf Instagram
-        </a>
-        
-        </a>
-        <!-- Buch 3 
-         Optional: Link zur Website oder Newsletter 
-        <a href="DEINE_WEBSITE" class="link-card" style="margin-top: 30px; background: #333; color: white;">
-            Meine Website & Newsletter
-        </a>
-        -->
-        
     </div>
 
 </body>
