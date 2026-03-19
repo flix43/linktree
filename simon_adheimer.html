@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Bücher | Autor Name</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .link-container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .link-card {
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #ddd;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background-color: #ff9900; /* Amazon Orange beim Hover */
+            color: white;
+            border-color: #ff9900;
+        }
+
+        .amazon-tag {
+            font-size: 0.8rem;
+            display: block;
+            font-weight: normal;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Optional: Dein Profilbild -->
+    <img src="https://via.placeholder.com" alt="Autor Profilbild" class="profile-img">
+
+    <h1>Meine Bücher auf Amazon</h1>
+
+    <div class="link-container">
+        <!-- Buch 1 -->
+        <a href="DEIN_AMAZON_LINK_1" class="link-card" target="_blank">
+            Buch Titel 1
+            <span class="amazon-tag">Jetzt bei Amazon entdecken</span>
+        </a>
+
+        <!-- Buch 2 -->
+        <a href="DEIN_AMAZON_LINK_2" class="link-card" target="_blank">
+            Buch Titel 2
+            <span class="amazon-tag">Taschenbuch & E-Book</span>
+        </a>
+
+        <!-- Buch 3 -->
+        <a href="DEIN_AMAZON_LINK_3" class="link-card" target="_blank">
+            Buch Titel 3
+            <span class="amazon-tag">Neuerscheinung</span>
+        </a>
+
+        <!-- Optional: Link zur Website oder Newsletter -->
+        <a href="DEINE_WEBSITE" class="link-card" style="margin-top: 30px; background: #333; color: white;">
+            Meine Website & Newsletter
+        </a>
+    </div>
+
+</body>
+</html>
