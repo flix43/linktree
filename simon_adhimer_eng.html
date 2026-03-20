@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Bücher | ADHS Helden</title>
+    <style>
+        /* Container für die relative Positionierung des Logos */
+        html, body {
+            position: relative;
+            min-height: 100%;
+        }
+
+        /* Das Logo oben links - scrollt mit */
+        .insta-corner-link {
+            position: absolute; /* Ändert das Verhalten von feststehend zu mitscrollend */
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+
+        .insta-corner-link:hover {
+            transform: scale(1.1);
+        }
+
+        .insta-icon-img {
+            width: 40px; /* Dezentere Größe für die Ecke */
+            height: 40px;
+        }
+
+        /* Restliches Design */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #D8BFD8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px; /* Padding oben etwas erhöht für Platz zum Logo */
+            margin: 0;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .link-container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .link-card {
+            background-color: #B0C4DE;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #ddd;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background-color: #000080; 
+            color: white;
+            border-color: #000080;
+        }
+
+        .amazon-tag {
+            font-size: 0.8rem;
+            display: block;
+            font-weight: normal;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Instagram Logo oben links (scrollt mit) -->
+    <a href="https://www.instagram.com" class="insta-corner-link" target="_blank">
+        <img src="Instagram_Glyph_Black.png" alt="Instagram" class="insta-icon-img">
+    </a>
+
+    <img src="adhs_helden_social_media.png" alt="Autor Profilbild" class="profile-img">
+
+    <h2>Hi, i am Simon...Here you will find my books</h2>
+
+    <div class="link-container">
+        <a href="https://www.amazon.com/ADHD-Hero-Book-Achieving-featuring/dp/B0GP5LDH7Y/ref=sr_1_1?crid=3T1KE2VIBDAX5&dib=eyJ2IjoiMSJ9.3ogzVfADQpgEEr4xdbdg3otEvocsfZFENJ_7HKBw71dBw4Erdus4pnPasv75WOhb.XOXNShBcvWCLMuRA_VYtHzOmySohiKE2_wpduyf56L0&dib_tag=se&keywords=ADHD+hero+book+adheimer&qid=1774006665&sprefix=adhd+hero+book+adheimer%2Caps%2C176&sr=8-1" class="link-card" target="_blank">
+            ADHD Hero Book (paperback) 
+            <span class="amazon-tag">Jetzt bei Amazon entdecken</span>
+        </a>
+
+        <a href="https://www.amazon.com/ADHD-Hero-Book-Achieving-featuring-ebook/dp/B0GGYF9C6W/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.3ogzVfADQpgEEr4xdbdg3otEvocsfZFENJ_7HKBw71dBw4Erdus4pnPasv75WOhb.XOXNShBcvWCLMuRA_VYtHzOmySohiKE2_wpduyf56L0&qid=1774006665&sr=8-1" class="link-card" target="_blank">
+            ADHS Heldenbuch (eBook)
+            <span class="amazon-tag">Jetzt bei Amazon entdecken</span>
+        </a>
+    
+         <a href="sample_ADHD_Hero_Book.pdf" class="link-card" target="_blank">
+            sample of my ADHD Hero book
+            <span class="amazon-tag">neuer Tab wird geöffnet</span>
+        </a>
+    </div>
+
+</body>
+</html>
